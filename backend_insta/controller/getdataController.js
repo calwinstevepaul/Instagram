@@ -25,7 +25,7 @@ class getdataController{
         followings.map(value=>{
             x.push(value.followerId)
         })
-        console.log(x)
+        console.log(x) 
         return await model.post.findAll({
             limit,
             offset,
